@@ -1,0 +1,8 @@
+{
+  "name": "aero-messenger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aero Messenger — сервер без зависимостей",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

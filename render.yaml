@@ -1,0 +1,16 @@
+# Render.com: New -> Blueprint -> выберите репозиторий с этими файлами
+services:
+  - type: web
+    name: aero-messenger
+    runtime: node
+    plan: free
+    buildCommand: "echo no build"
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: TRUST_PROXY
+        value: "1"
+      - key: RESEND_API_KEY
+        sync: false
+      - key: MAIL_FROM
+        sync: false
